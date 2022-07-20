@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Gantari&family=Poppins:wght@400;500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*--------------
+ header-section
+ ---------------*/
+
+.container {
+  width: 80%;
+  margin: auto;
+
+}
+
+.top-banner {
+  display: flex;
+  background-color: #0b0934;
+  border-radius: 10px;
+  margin: 50px 0;
+  padding-top: 30px;
+}
+
+.banner {
+  width: 50%;
+  text-align: center;
+  margin: 0px 40px;
+}
+
+.left-banner {
+  width: 90%;
+  margin-left: 70px;
+  text-align: left;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 700px;
+}
+
+.banner p {
+  color: white;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.live {
+  margin-top: 40px;
+}
+
+.live a {
+  text-decoration: none;
+  background-color: #f50648;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.live span {
+  height: 20px;
+  width: 20px;
+  background-color: #99333c;
+  display: inline-block;
+  animation: beep 0.5s ease-in infinite;
+  border-radius: 50%;
+  margin-left: 5px;
+
+}
+
+/* animation */
+@keyframes beep {
+  from {
+    background-color: rgb(109, 79, 193);
+  }
+
+  to {
+    background-color: #00c5b5;
+  }
+}
+
+/* --------------
+main-section
+--------------- */
+
+.features {
+  display: flex;
+  margin-top: 60px;
+}
+
+.feature-nav {
+  width: 300px;
+  background-color: #0b0934;
+  margin-right: 20px;
+  border-radius: 5px;
+  height: 300px;
+
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-cards {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+}
+
+.upcoming a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.upcoming {
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.groups a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.groups {
+  background-color: white;
+  padding: 10px 53px;
+  border-radius: 5px;
+  margin: 30px 0;
+}
+
+.blogs a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.blogs {
+  background-color: #1f77d3;
+  padding: 10px 72px;
+  border-radius: 5px;
+}
+
+.player {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+}
+
+.player img {
+  width: 100%;
+}
+
+.live-match {
+  margin: 15px 30px;
+}
+
+.live-match button {
+  font-size: 16px;
+  background-color: #f7f4f4a7;
+  border: 1px solid #161616;
+  padding: 5px 15px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+
+.live-match h4 {
+  font-size: 18px;
+}
+
+.icon {
+  font-size: 16px;
+}
+
+.icon span {
+  margin-right: 16px;
+}
+
+.bottom-button {
+  margin: 30px;
+  text-align: center;
+  display: none;
+}
+
+.view {
+  background-color: #663399;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 16px;
+  border-radius: 5px;
+}
+
+/* -----------------
+footer-section-start 
+--------------------*/
+.footer-section {
+  margin-top: 100px;
+  background-color: #0b0934;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.footer h2 {
+  font-size: 35px;
+  color: rgb(192, 0, 0);
+}
+
+.footer-items nav {
+  margin: 35px 0px;
+}
+
+.footer-items li {
+  list-style: none;
+  display: inline;
+  color: rgb(224, 123, 123);
+  margin: 25px;
+}
+
+.social-media ul {
+  padding: 0;
+}
+
+.social-media li {
+  list-style: none;
+  display: inline;
+  margin: 50px;
+  font-size: 50px;
+}
+
+.social-media a {
+  color: rgb(196, 148, 148);
+}
+
+/* -----------------------------------------------------------------
+match section CSS 
+--------------------------------------------------------------------*/
+.match-info {
+  text-align: center;
+}
+
+.match-icon {
+  margin: 30px;
+  display: flex;
+}
+
+.match-info h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.match-info h6 {
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+
+
+
+@media only screen and (min-width:1001px){
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .live {
+        margin-top: 30px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .bottom-button {
+        display: none;
+    }
+
+    .match-icon {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .match-info h6 {
+        font-size: 10px;
+    }
+
+    .match-info h4 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width:501px) and (max-width:1000px) {
+    .left-banner h1 {
+        font-size: 20px;
+    }
+
+    .banner {
+        display: flex;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .hide {
+        display: block;
+        font-size: 10px;
+    }
+
+    .live {
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    .live a {
+        font-size: 10px;
+    }
+
+    .live span {
+        height: 7px;
+        width: 15px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-nav {
+        margin-right: 20px;
+        border-radius: 5px;
+        margin: 0 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background-color: white;
+    }
+
+    .upcoming {
+        border: 1px solid #ddd2d2;
+
+    }
+
+    .upcoming a {
+        font-size: 15px;
+    }
+
+    .groups {
+        border: 1px solid #ddd2d2;
+        margin: 0;
+        padding: 10px 40px;
+
+    }
+
+    .groups a {
+        font-size: 15px;
+    }
+
+    .blogs{
+      border: 1px solid #ddd2d2;
+    }
+
+    .blogs a {
+        font-size: 15px;
+    }
+
+    .feature-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .match-icon {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        align-items: center;
+    }
+
+    .match-icon h3 {
+        font-size: 15px;
+    }
+
+    .match-info h4 {
+        font-size: 15px;
+    }
+
+    .match-info h6 {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+    .show {
+        display: none;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .features {
+        display: flex;
+        margin-top: 58px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-nav {
+        width: 300px;
+        background-color: white;
+    }
+
+    .feature-cards {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 15px;
+    }
+
+    .live-match button {
+        font-size: 15px;
+    }
+
+    .live-match h4 {
+        font-size: 15px;
+    }
+
+    .icon {
+        font-size: 15px;
+    }
+
+    .upcoming {
+        border: 1px solid white;
+    }
+    
+    .upcoming a {
+        font-size: 15px;
+    }
+
+    .groups {
+        border: 1px solid white;
+        padding: 10px 30px;
+    }
+
+    .groups a {
+        font-size: 15px;
+    }
+
+    .blogs a {
+        font-size: 15px;
+    }
+
+
+    .bottom-button {
+        display: none;
+    }
+
+    .footer-items li {
+        display: block;
+        justify-content: center;
+    }
+
+    .icons li {
+        font-size: 15px;
+    }
+
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-banner h1 {
+        font-size: 15px;
+    }
+
+    .hide {
+        font-size: 10px;
+    }
+
+    .live {
+        margin: 10px 0;
+    }
+
+    .live a {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .live span {
+        height: 5px;
+        width: 5px;
+    }
+
+    .match-icon {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        align-items: center;
+    }
+
+    .match-icon h3 {
+        font-size: 15px;
+    }
+
+    .match-info h4 {
+        font-size: 15px;
+    }
+
+    .match-info h6 {
+        font-size: 12px;
+    }
+
+}
